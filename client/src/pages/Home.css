@@ -212,6 +212,62 @@
   font-size: 14px;
 }
 
+/* ===== آراء العملاء ===== */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.review {
+  padding: 28px;
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.review-head {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.review-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: var(--navy);
+  color: var(--gold);
+  font-family: var(--font-heading);
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.review-head strong {
+  display: block;
+  color: var(--navy);
+}
+
+.review-head small {
+  color: var(--muted);
+}
+
+.review p {
+  color: var(--text);
+  font-size: 15px;
+}
+
+.reviews-source {
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+  margin-top: 30px;
+}
+
 /* ===== احجز ===== */
 .cta {
   padding: 90px 20px;
@@ -298,6 +354,10 @@
 
   .services {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews {
+    grid-template-columns: 1fr;
   }
 
   .about-text h2,

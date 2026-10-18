@@ -28,6 +28,40 @@ const foodImages = [
   "images/hotel/food-5.webp",
 ];
 
+// آراء العملاء (من بوكينج)
+const reviews = [
+  {
+    name: "Isam",
+    country: "Libya",
+    text: "All are very good, good staff, very clean and comfortable apartment. With good prices, I like it, so I hope book again next trip.",
+  },
+  {
+    name: "Marcia",
+    country: "Egypt",
+    text: "I really liked this place and can highly recommend it. Everything was very clean and beautiful ❤️",
+  },
+  {
+    name: "المعتصم",
+    country: "Oman",
+    text: "The hotel is beautiful and very clean... a new hotel. The staff are very cooperative, especially Professor Mohammed. Our destination next time, God willing.",
+  },
+  {
+    name: "Haitham",
+    country: "Qatar",
+    text: "The place is comfortable, the staff are professional, we didn't encounter any problems, and the breakfast is good. Thank you to everyone involved in managing the place.",
+  },
+  {
+    name: "Ghassan",
+    country: "Burundi",
+    text: "The staff and workers, the manager Mr. Ahmed Hamza is a wonderful person, and Mr. Hamza from the reception and 3 at the reception named Mohammed are all good, and the restaurant and the workers in general make you feel like you are in your home.",
+  },
+  {
+    name: "Maha",
+    country: "Saudi Arabia",
+    text: "I thoroughly enjoyed breakfast – the restaurant and the chef made the food delicious. A huge thank you to Mr. Mohamed Hanafi; he was incredibly kind, polite, and had excellent service. The reception staff were wonderful.",
+  },
+];
+
 function Home() {
   return (
     <div>
@@ -143,6 +177,33 @@ function Home() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* ===== آراء العملاء ===== */}
+      <section className="section">
+        <div className="container">
+          <div className="section-title">
+            <span className="small-title">Guest reviews</span>
+            <h2>What our guests say</h2>
+          </div>
+
+          <div className="reviews">
+            {reviews.map((review) => (
+              <div className="review" key={review.name}>
+                <div className="review-head">
+                  <span className="review-avatar">{review.name[0]}</span>
+                  <div>
+                    <strong>{review.name}</strong>
+                    <small>{review.country}</small>
+                  </div>
+                </div>
+                <p>"{review.text}"</p>
+              </div>
+            ))}
+          </div>
+
+          <p className="reviews-source">Reviews from our guests on Booking.com</p>
         </div>
       </section>
 
