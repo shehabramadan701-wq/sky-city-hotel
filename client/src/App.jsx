@@ -10,6 +10,8 @@ import Rooms from "./pages/Rooms";
 import RoomDetails from "./pages/RoomDetails";
 import Booking from "./pages/Booking";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Signup from "./pages/Signup";
 
 import hotel from "./data/hotel";
 
@@ -30,8 +32,9 @@ function App() {
         <Route path="/rooms" element={<Rooms />} />
         <Route path="/rooms/:id" element={<RoomDetails />} />
         <Route path="/booking" element={<Booking />} />
-        <Route path="/booking/:id" element={<Booking />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/signup" element={<Signup />} />
       </Routes>
 
       <Footer />

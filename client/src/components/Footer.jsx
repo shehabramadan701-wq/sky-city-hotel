@@ -8,15 +8,15 @@ function Footer() {
       <div className="container footer-grid">
         <div>
           <h3>{hotel.name}</h3>
-          <p>A cozy, modern hotel in the heart of Downtown Cairo.</p>
+          <p>Modern suites with a private kitchen and breakfast included, in the heart of Cairo.</p>
         </div>
 
         <div>
           <h4>Pages</h4>
           <Link to="/">Home</Link>
-          <Link to="/rooms">Rooms</Link>
-          <Link to="/booking">Booking</Link>
+          <Link to="/rooms">Suites</Link>
           <Link to="/contact">Contact</Link>
+          <Link to="/login">Login</Link>
         </div>
 
         <div>

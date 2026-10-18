@@ -1,4 +1,4 @@
-# Sky City Hotel
+# Sky City Apartments
 
 ## التشغيل
 
@@ -8,6 +8,13 @@ npm install
 npm run dev
 ```
 افتح http://localhost:5173
+
+## النشر على GitHub Pages
+```bash
+cd client
+npm run deploy
+```
+الموقع: https://shehabramadan701-wq.github.io/sky-city-hotel/
 
 ## الملفات
 
@@ -24,8 +31,10 @@ client/src/
 │   ├── Home.jsx
 │   ├── Rooms.jsx
 │   ├── RoomDetails.jsx
-│   ├── Booking.jsx
-│   └── Contact.jsx
+│   ├── Booking.jsx     ← الخطوة التانية في الحجز (الاسم والتوتال)
+│   ├── Contact.jsx
+│   ├── Login.jsx
+│   └── Signup.jsx
 ├── App.jsx           ← الصفحات واللينكات بتاعتها
 └── index.css         ← الألوان والحاجات المشتركة
 ```
@@ -34,9 +43,10 @@ client/src/
 
 | عايز تغيّر | روح لـ |
 |---|---|
-| الغرف والأسعار والصور | `data/rooms.js` |
+| الغرف والأسعار والضرايب | `data/rooms.js` |
+| الصور | `client/public/images/` |
 | التليفون والعنوان | `data/hotel.js` |
-| الخدمات والريفيوهات | أول `pages/Home.jsx` |
+| الخدمات | أول `pages/Home.jsx` |
 | الألوان | أول `index.css` |
 
 ---

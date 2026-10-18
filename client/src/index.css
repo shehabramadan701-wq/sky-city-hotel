@@ -82,7 +82,7 @@ h1, h2, h3, h4 {
 
 .rooms-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
   gap: 30px;
 }
 
@@ -155,7 +155,8 @@ h1, h2, h3, h4 {
 
 /* ============ الهيدر بتاع الصفحات ============ */
 .page-header {
-  padding: 90px 0;
+  padding: 90px 20px;
+  background-color: var(--navy);
   text-align: center;
   background-size: cover;
   background-position: center;
@@ -204,15 +205,4 @@ h1, h2, h3, h4 {
   .rooms-grid {
     grid-template-columns: 1fr;
   }
-}
-
-/* صور الهيدر بتاع كل صفحة */
-.rooms-header {
-  background-image: linear-gradient(rgba(15, 27, 45, 0.8), rgba(15, 27, 45, 0.85)),
-    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=70&auto=format");
-}
-
-.contact-header {
-  background-image: linear-gradient(rgba(15, 27, 45, 0.8), rgba(15, 27, 45, 0.85)),
-    url("https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=1600&q=70&auto=format");
 }

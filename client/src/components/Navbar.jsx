@@ -16,14 +16,15 @@ function Navbar() {
       <div className="container navbar-inner">
         <Link to="/" className="logo" onClick={closeMenu}>
           <span className="logo-mark">SC</span>
-          <span className="logo-text">Sky City Hotel</span>
+          <span className="logo-text">Sky City Apartments</span>
         </Link>
 
         <nav className={menuOpen ? "nav-links open" : "nav-links"}>
           <NavLink to="/" onClick={closeMenu}>Home</NavLink>
-          <NavLink to="/rooms" onClick={closeMenu}>Rooms</NavLink>
+          <NavLink to="/rooms" onClick={closeMenu}>Suites</NavLink>
           <NavLink to="/contact" onClick={closeMenu}>Contact</NavLink>
-          <Link to="/booking" className="btn btn-gold" onClick={closeMenu}>Book Now</Link>
+          <NavLink to="/login" onClick={closeMenu}>Login</NavLink>
+          <Link to="/signup" className="btn btn-gold" onClick={closeMenu}>Sign Up</Link>
         </nav>
 
         <button className="menu-btn" onClick={() => setMenuOpen(!menuOpen)}>

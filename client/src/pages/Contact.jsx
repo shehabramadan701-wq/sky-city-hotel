@@ -6,7 +6,13 @@ import "./Contact.css";
 function Contact() {
   return (
     <div>
-      <section className="page-header contact-header">
+      <section
+        className="page-header"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(15,27,45,0.75), rgba(15,27,45,0.85)), url(images/hotel/rooftop.webp)",
+        }}
+      >
         <h1>Contact Us</h1>
         <p>We are happy to help you plan your stay</p>
       </section>
@@ -43,7 +49,7 @@ function Contact() {
             <h3><FiMapPin /> {hotel.address}</h3>
             <iframe
               title="map"
-              src="https://www.google.com/maps?q=Sky+City+Hotel+Downtown+Cairo&output=embed"
+              src="https://www.google.com/maps?q=Sky+City+Apartments+Cairo&output=embed"
             ></iframe>
           </div>
         </div>

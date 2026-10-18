@@ -41,7 +41,7 @@
 .nav-links {
   display: flex;
   align-items: center;
-  gap: 34px;
+  gap: 28px;
 }
 
 .nav-links a {
@@ -88,5 +88,15 @@
 
   .nav-links.open {
     display: flex;
+  }
+}
+
+.nav-links a:focus {
+  outline: none;
+}
+
+@media (max-width: 480px) {
+  .logo-text {
+    font-size: 18px;
   }
 }
