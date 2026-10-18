@@ -270,9 +270,11 @@
 
 /* ===== احجز ===== */
 .cta {
-  padding: 90px 20px;
+  padding: 100px 20px;
   text-align: center;
-  background: var(--navy);
+  background-color: var(--navy);
+  background-size: cover;
+  background-position: center;
 }
 
 .cta h2 {

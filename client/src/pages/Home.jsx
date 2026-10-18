@@ -208,7 +208,13 @@ function Home() {
       </section>
 
       {/* ===== احجز ===== */}
-      <section className="cta">
+      <section
+        className="cta"
+        style={{
+          backgroundImage:
+            "linear-gradient(rgba(15,27,45,0.82), rgba(15,27,45,0.82)), url(images/hotel/rooftop.webp)",
+        }}
+      >
         <h2>Ready for your stay in Cairo?</h2>
         <p>Book directly with us. Breakfast included and free cancellation.</p>
         <Link to="/rooms" className="btn btn-gold">Book Your Suite</Link>
