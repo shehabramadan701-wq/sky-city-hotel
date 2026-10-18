@@ -23,11 +23,13 @@ function Footer() {
         {/* ===== الصفحات ===== */}
         <div className="footer-col">
           <h4>Pages</h4>
-          <Link to="/">Home</Link>
-          <Link to="/rooms">Suites</Link>
-          <Link to="/contact">Contact</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Sign Up</Link>
+          <div className="footer-pages">
+            <Link to="/">Home</Link>
+            <Link to="/rooms">Suites</Link>
+            <Link to="/contact">Contact</Link>
+            <Link to="/login">Login</Link>
+            <Link to="/signup">Sign Up</Link>
+          </div>
         </div>
 
         {/* ===== التواصل ===== */}
