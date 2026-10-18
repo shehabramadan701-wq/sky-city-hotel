@@ -1,0 +1,165 @@
+.details-page {
+  padding: 50px 0 90px;
+  background: var(--cream);
+}
+
+.details-grid {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: 40px;
+  align-items: start;
+}
+
+.main-image {
+  width: 100%;
+  height: 460px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.thumbs {
+  display: flex;
+  gap: 12px;
+  margin-top: 12px;
+}
+
+.thumbs img {
+  width: 110px;
+  height: 80px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 3px solid transparent;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.thumbs img.active {
+  border-color: var(--gold);
+  opacity: 1;
+}
+
+.details-page h1 {
+  font-size: 42px;
+  margin: 30px 0 20px;
+}
+
+.details-page h3 {
+  font-size: 24px;
+  margin-bottom: 12px;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  margin-bottom: 36px;
+}
+
+.facts div {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: 18px;
+  background: white;
+  border-radius: 12px;
+}
+
+.facts svg {
+  color: var(--gold-dark);
+  font-size: 22px;
+}
+
+.facts span {
+  color: var(--muted);
+  font-size: 13px;
+}
+
+.description {
+  color: var(--muted);
+  margin-bottom: 36px;
+}
+
+.amenities {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.amenities p {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.amenities svg {
+  color: white;
+  background: var(--gold);
+  border-radius: 50%;
+  padding: 3px;
+  font-size: 20px;
+}
+
+/* ===== بوكس الحجز ===== */
+.book-box {
+  position: sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 28px;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  color: var(--muted);
+}
+
+.book-price {
+  font-family: var(--font-heading);
+  font-size: 36px;
+  color: var(--navy) !important;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--border);
+}
+
+.book-price span {
+  font-family: var(--font-body);
+  font-size: 15px;
+  color: var(--muted);
+}
+
+.book-box .btn {
+  margin-top: 10px;
+}
+
+/* ===== موبايل ===== */
+@media (max-width: 900px) {
+  .details-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .main-image {
+    height: 280px;
+  }
+
+  .facts {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .details-page h1 {
+    font-size: 30px;
+  }
+
+  .book-box {
+    position: static;
+  }
+}
+
+@media (max-width: 480px) {
+  .amenities {
+    grid-template-columns: 1fr;
+  }
+
+  .thumbs img {
+    width: 30%;
+  }
+}

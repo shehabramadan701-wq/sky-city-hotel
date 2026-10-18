@@ -1,0 +1,295 @@
+/* ===== الصورة الكبيرة ===== */
+.hero {
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+  padding-bottom: 60px;
+  background-image: linear-gradient(100deg, rgba(15, 27, 45, 0.9), rgba(15, 27, 45, 0.4)),
+    url("https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?w=1600&q=70&auto=format");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero h1 {
+  color: white;
+  font-size: 70px;
+  max-width: 700px;
+}
+
+.hero p {
+  color: white;
+  opacity: 0.88;
+  font-size: 18px;
+  max-width: 540px;
+  margin: 22px 0 34px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+/* ===== أرقام سريعة ===== */
+.stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  margin-top: -50px;
+  position: relative;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.stats div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 26px 10px;
+  border-right: 1px solid var(--border);
+}
+
+.stats div:last-child {
+  border-right: none;
+}
+
+.stats strong {
+  font-family: var(--font-heading);
+  font-size: 32px;
+  color: var(--gold-dark);
+}
+
+.stats span {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ===== عن الفندق ===== */
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.about-img {
+  position: relative;
+}
+
+.about-img img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: var(--radius);
+}
+
+.about-badge {
+  position: absolute;
+  right: -20px;
+  bottom: 40px;
+  padding: 22px 28px;
+  border-radius: var(--radius);
+  background: var(--navy);
+  color: white;
+}
+
+.about-badge strong {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 44px;
+  color: var(--gold);
+}
+
+.about-text h2 {
+  font-size: 38px;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: var(--muted);
+  margin-bottom: 16px;
+}
+
+.center {
+  text-align: center;
+  margin-top: 50px;
+}
+
+/* ===== الخدمات ===== */
+.services {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.service {
+  padding: 32px 24px;
+  text-align: center;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.service-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 50%;
+  background: var(--cream);
+  color: var(--gold-dark);
+  font-size: 26px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service p {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ===== المكان ===== */
+.location {
+  padding: 110px 0;
+  color: white;
+  background-image: linear-gradient(rgba(15, 27, 45, 0.85), rgba(15, 27, 45, 0.85)),
+    url("https://images.unsplash.com/photo-1539650116574-8efeb43e2750?w=1600&q=70&auto=format");
+  background-size: cover;
+  background-position: center;
+}
+
+.location-inner {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+.location h2 {
+  color: white;
+  font-size: 42px;
+  margin-bottom: 16px;
+}
+
+.places {
+  padding: 10px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius);
+}
+
+.place {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.place:last-child {
+  border-bottom: none;
+}
+
+.place strong {
+  color: var(--gold);
+}
+
+/* ===== آراء العملاء ===== */
+.reviews {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.review {
+  padding: 32px;
+  background: white;
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+
+.review-score {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 8px;
+  background: var(--navy);
+  color: white;
+  font-weight: 600;
+}
+
+.review p {
+  font-family: var(--font-heading);
+  font-size: 19px;
+  color: var(--navy);
+  margin: 18px 0;
+}
+
+.review strong {
+  color: var(--muted);
+  font-size: 14px;
+}
+
+/* ===== احجز ===== */
+.cta {
+  padding: 90px 20px;
+  text-align: center;
+  background: var(--navy);
+}
+
+.cta h2 {
+  color: white;
+  font-size: 42px;
+}
+
+.cta p {
+  color: white;
+  opacity: 0.8;
+  margin: 12px 0 30px;
+}
+
+/* ===== موبايل ===== */
+@media (max-width: 900px) {
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats div:nth-child(2) {
+    border-right: none;
+  }
+
+  .about,
+  .location-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .about-img img {
+    height: 360px;
+  }
+
+  .about-badge {
+    right: 16px;
+  }
+
+  .services {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .reviews {
+    grid-template-columns: 1fr;
+  }
+
+  .about-text h2,
+  .location h2,
+  .cta h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .services {
+    grid-template-columns: 1fr;
+  }
+}
