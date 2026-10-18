@@ -31,24 +31,25 @@ const foodImages = [
 function Home() {
   return (
     <div>
-      {/* ===== الصورة الكبيرة ===== */}
-      <section
-        className="hero"
-        style={{
-          backgroundImage:
-            "linear-gradient(100deg, rgba(15,27,45,0.9), rgba(15,27,45,0.35)), url(images/hotel/facade.webp)",
-        }}
-      >
-        <div className="container">
-          <span className="small-title">Welcome to {hotel.name}</span>
-          <h1>Your home in the heart of Cairo</h1>
-          <p>
-            Modern suites with a private kitchen, breakfast included and a rooftop
-            restaurant overlooking the city.
-          </p>
-          <div className="hero-buttons">
-            <Link to="/rooms" className="btn btn-gold">Explore Suites</Link>
-            <Link to="/contact" className="btn btn-outline">Contact Us</Link>
+      {/* ===== أول الصفحة ===== */}
+      <section className="hero">
+        <div className="container hero-inner">
+          <div className="hero-text">
+            <span className="small-title">Welcome to {hotel.name}</span>
+            <h1>Your home in the heart of Cairo</h1>
+            <p>
+              Modern suites with a private kitchen, breakfast included and a rooftop
+              restaurant overlooking the city.
+            </p>
+            <div className="hero-buttons">
+              <Link to="/rooms" className="btn btn-gold">Explore Suites</Link>
+              <Link to="/contact" className="btn btn-outline">Contact Us</Link>
+            </div>
+          </div>
+
+          <div className="hero-images">
+            <img className="hero-main" src="images/hotel/facade.webp" alt={hotel.name} />
+            <img className="hero-small" src="images/hotel/rooftop.webp" alt="Rooftop restaurant" />
           </div>
         </div>
       </section>
